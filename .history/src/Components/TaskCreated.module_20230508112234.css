@@ -1,0 +1,18 @@
+.checkboxButton {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+.taskContent {
+  flex: 1
+}
+
+
+  .checkboxButton input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .checkboxButton button {
+    margin-left: auto;
+  }

@@ -1,0 +1,18 @@
+.task {
+  color: red;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskHeaderP1 {
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.taskHeaderP2 {
+  color: var(--purble);
+  font-size: 0.875rem;
+}

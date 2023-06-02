@@ -1,0 +1,62 @@
+.taskInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  display: block;
+  padding: 10px 0;
+  position: relative;
+}
+
+span label {
+  margin-left: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+span input[type="checkbox"] {
+  visibility: hidden;
+}
+
+span label:before {
+  content: "";
+  width: 3px;
+  height: 8px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  left: 4px;
+  margin-top: -2px;
+  top: 50%;
+  z-index: 2;
+}
+
+span label:after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  border: 1px solid #ddd;
+  transform: translateY(-50%);
+}
+
+span input:checked + label:before {
+  border-color: #fff;
+}
+
+span input:checked + label:after {
+  background-color: #0b9e8a;
+  border: 1px solid #0b9e8a;
+  /* 	animation: checkBounceIn .5s 0s ease-in-out; */
+}
+
+/* span input:checked + label {
+} */

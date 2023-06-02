@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 46rem;
+  margin: -1.656rem auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+
+}

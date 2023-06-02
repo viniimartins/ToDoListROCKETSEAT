@@ -1,0 +1,59 @@
+import React, { useState } from "react";
+import styles from "./TaskCreated.module.css";
+import { Trash } from "phosphor-react";
+
+type Props = {
+  key: string;
+  contend: string;
+  conclued: number;
+  onDeleteComent: (task: string) => void;
+  onClickCountTask: (conclued: number) => void;
+};
+
+export function TaskCreated({
+  // key,
+  contend,
+  conclued,
+  onDeleteComent,
+  onClickCountTask,
+}: Props) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked(event.target.checked);
+  };
+
+  function handleDeleteTask() {
+    onDeleteComent(contend);
+  }
+
+  // function onClickCountTask() {
+  //   setCountTask(countTask === 0 ? countTask + 1 : countTask - 1);
+  //   conclued = countTask;
+  // }
+
+  function handleClickCountTask() {
+    onClickCountTask(conclued);
+  }
+
+  return (
+    <div className={styles.taskCreated}>
+      <label className={styles.checkbox}>
+        <input
+          type="checkbox"
+          checked={checked}
+          onChange={handleChange}
+          onClick={handleClickCountTask}
+        />
+        <span className={styles.checkmark} />
+        <span className={checked ? styles.labelConclued : styles.label}>
+          {contend}
+        </span>
+      </label>
+
+      <button onClick={handleDeleteTask}>
+        <Trash size={20} />
+      </button>
+    </div>
+  );
+}

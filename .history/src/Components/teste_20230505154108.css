@@ -1,0 +1,30 @@
+.Counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    padding: 0 4px;
+  }
+  
+  .CounterButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .CounterButton:hover {
+    background-color: #0069d9;
+  }
+  
+  .CounterValue {
+    font-size: 12px;
+    font-weight: bold;
+  }

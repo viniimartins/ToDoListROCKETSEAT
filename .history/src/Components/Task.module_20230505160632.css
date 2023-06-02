@@ -1,0 +1,52 @@
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: red; */
+}
+
+.taskCreated {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.taskCreated p {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.taskCounter {
+  width: 25px;
+  height: 19px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px 8px;
+  border-radius: 999px;
+
+  background-color: var(--gray-400);
+}
+
+.taskCouter span p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  background-color: transparent;
+
+  color: red;
+
+}
+
+.taskConcluded {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.taskConcluded p {
+  color: var(--purble);
+  font-size: 0.875rem;
+  font-weight: 700;
+}

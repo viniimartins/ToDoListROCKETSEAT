@@ -1,0 +1,17 @@
+.taskBox {
+    color: blue;
+    background-color: blue;
+}
+
+.taskContent {
+    height: 64rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.taskContent img {
+    width: 3.5rem;
+    height: 3.5rem;
+}

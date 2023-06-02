@@ -1,0 +1,12 @@
+.inputText {
+    width: 39.875rem;
+    height: 3.375rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--gray-700);
+
+    font-size: 1rem;
+    background: linear-gradient(0deg, #262626, #262626),
+linear-gradient(0deg, #0D0D0D, #0D0D0D);
+
+}

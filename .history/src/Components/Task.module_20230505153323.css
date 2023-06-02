@@ -1,0 +1,8 @@
+.task {
+    color: red;
+}
+
+.taskHeader {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: 50rem;
+  margin: -1.656rem auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+
+  background-color: red;
+}

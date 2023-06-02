@@ -1,0 +1,20 @@
+.taskBox {
+    border-radius: 0.5rem;
+    border-top: 1px solid var(--gray-400);
+}
+
+.taskContent {
+    padding:4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+    border: 1px solid green;
+}
+
+.taskContent img {
+    margin-top: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}

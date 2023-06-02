@@ -1,0 +1,81 @@
+.taskCreated {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--gray-400);
+  border-color: 1px solid var(--gray-500);
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: var(--blueDark);
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: var(--purbleDark);
+  border-color: var(--purbleDark);
+}
+
+.checkbox input:checked ~ .checkmark:hover {
+  background-color: var(--purble);
+  border-color: var(--purble);
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkbox .checkmark::after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 1.9px 1.9px 0;
+  transform: rotate(45deg);
+}
+
+.label {
+  margin-left: 2rem;
+  font-size: 0.875rem;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

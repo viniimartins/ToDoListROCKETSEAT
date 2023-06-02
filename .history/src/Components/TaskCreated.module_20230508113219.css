@@ -1,0 +1,23 @@
+.taskContent {
+  border-radius: 0.5rem;
+  background-color: var(--gray-400);
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.taskText {
+  flex: 1;
+  margin-left: 0.625rem;
+
+  font-size: 0.875rem;
+}
+
+.taskContent input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.taskContent button {
+  margin-left: auto;
+}

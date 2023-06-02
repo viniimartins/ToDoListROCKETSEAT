@@ -1,0 +1,16 @@
+.task {
+    color: red;
+}
+
+.taskHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskHeaderP1 {
+    color: var(--blue)
+}
+
+.taskHeaderP2 {
+    color: var(--blue)
+}

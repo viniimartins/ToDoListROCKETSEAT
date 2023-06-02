@@ -1,0 +1,13 @@
+.checkboxButton {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkboxButton input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .checkboxButton button {
+    margin-left: auto;
+  }

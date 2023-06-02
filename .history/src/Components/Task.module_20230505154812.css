@@ -1,0 +1,27 @@
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskCreated {
+ display: flex;
+ align-items: center;
+
+}
+
+.taskCreated p {
+    color: var(--blue);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.taskConcluded {
+  color: var(--purble);
+  font-size: 0.875rem;
+  font-weight: 700;
+
+}
+
+.taskHeaderNameConcluded {
+    color: var(--purble);
+}
